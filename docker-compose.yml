@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  sit3237372023t1prac2p:
+    image: sit3237372023t1prac2p
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
